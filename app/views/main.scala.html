@@ -1,0 +1,58 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/home.css")" />
+	<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/jquery-ui.min.css")" />	
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-1.10.2.js")"></script>	
+	<script type="text/javascript" src="@routes.Assets.at("javascripts/jquery-ui.min.js")"></script>	
+	
+
+</head>
+
+<body>
+
+<div id="container">
+
+	<div id="mybox">
+		<div id="msg" class=""></div>
+		<div id="search">
+			<div class="infobox">
+				<div class="left">Product ID</div>
+				<div class="right"><input id="ps" type="text" class="text-box" value=""/></div>
+			</div>
+		</div>
+
+		<div id="infocont">
+			<div class="infobox">
+				<div class="left">ID</div>
+				<div  class="right"><span class="data" id="_prid">00000</span></div>
+			</div>
+			<div class="infobox">
+				<div class="left">Title</div>
+				<div class="right"><input id="_title" type="text" class="text-box" placeholder="Enter a title" /></div>
+			</div>
+			<div class="infobox">
+				<div class="left">Price</div>
+				<div class="right"><input id="_price" type="text" class="text-box" placeholder="Enter a price" /></div>
+			</div>
+			<div class="infobox">
+				<div class="left">Cost</div>
+				<div class="right"><span class="data" id="_cost">0.0</span></div>
+			</div>
+			<div class="infobox">
+				<button class="button" id="update" type="button">Update</button>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>
+<script type="text/javascript" src="@routes.Assets.at("javascripts/home.js")"></script>
+</body>
+
+</html>
