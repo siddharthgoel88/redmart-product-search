@@ -1,4 +1,9 @@
-This is your new Play application
-=================================
+RedMart Assignment2
+===================
 
-This file will be packaged with your application, when using `activator dist`.
+This code assumes a mongodb running on localhost at default port with following details -
+
+Database - test
+Collection - redmartCollection
+user - redmart
+password - 12345
